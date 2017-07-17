@@ -1,4 +1,7 @@
-.ls { clear: both; }
+.ls {
+	clear: both;
+	max-width: (@full-width - 20px);
+}
 
 .ls_loading {
 	width: 100%;
@@ -29,10 +32,10 @@
 }
 @media (max-width: 699px) { .ls_loading, .item_expander { margin-left: -16px; } }
 
-.new_day { padding-top: 40px; background: @bg-plain; border-bottom: @border-heavy; font-size: 2.0em; width: 100%; }
+.new_day { padding-top: 40px; padding-bottom: 5px; background: @bg-plain; font-size: 2.0em; width: 100%; }
 .new_day, .new_time { position: relative; z-index: 2; }
-.new_day + hr { display: none; }
-.new_time { padding: 13px 0 0 0; height: 70px; margin-bottom: -78px; width: @time-width; text-align: center;
+hr { display: none; }
+.new_time { padding: 8px 0 0 0; height: 70px; margin-bottom: -78px; width: @time-width; text-align: center;
 	background: @bg-plain;
 	background: transparent -webkit-linear-gradient(top, @bg-plain 50%, rgba(255,255,255,0.0));
 	background: transparent    -moz-linear-gradient(top, @bg-plain 50%, rgba(255,255,255,0.0));
@@ -43,12 +46,15 @@
 
 .item_frame {
 	position: relative;
-	margin: 0 0 10px @time-width;
+	margin: 0 0 5px @time-width;
 }
 
 
 .item_star {
-	position: absolute; width: 20px; height: 20px; top: 10px; left: 10px; background: @bg-highlight; cursor: pointer;
+	position: absolute; width: 20px; height: 20px; top: 12px; left: 10px; background: @bg-highlight; cursor: pointer;
+	border-radius: 2px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
+	z-index: 3;
 	&.has_star { background: @fg-highlight !important; }
 }
 .show_set .item_star {
@@ -65,11 +71,16 @@
 
 
 .item {
+	background: white;
+	border-radius: 2px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
 	clear: both;
 	display: block;
+	position: relative;
 	overflow: auto;
-	padding: 5px 10px 0 30px;
+	padding: 7px 10px 7px 30px;
 	margin-bottom: 5px;
+	z-index: 2;
 	cursor: pointer;
 	> div { margin: 0 10px; }
 	.title { margin: 3px 0 3px 10px; }
@@ -104,7 +115,7 @@
 	background: @bg-highlight;
 
 	.item_star { background: @bg-highlight-more; }
-	.item { padding-bottom: 1em; }
+	.item { padding-bottom: 10px; }
 	.title { .font-heavy; }
 	.loc { color: @fg-light-in-box !important; }
 	.item > .item-people { display: none; }

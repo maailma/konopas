@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="skin/konopas.css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700" rel="stylesheet">
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 
@@ -48,12 +49,14 @@
 <img id="title-small" src="skin/konopas.png" style="width: 240px;">
 <img id="title" src="skin/konopas.png" style="width: 200px;"></a></h1>
 
+<div id="tab-wrap">
 <ul id="tabs">
 <li id="tab_star"><a href="#star" data-txt>My con</a>
 <li id="tab_prog"><a href="#" data-txt>Program</a><div id="day-sidebar" class="sub-side"></div>
 <li id="tab_part"><a href="#part" data-txt>People</a><div id="part-sidebar" class="sub-side"></div>
 <li id="tab_info"><a href="#info" data-txt>Info</a>
 </ul>
+</div>
 
 <div id="refresh"><i class="refresh_icon"></i><span data-txt>Refresh data</span></div>
 </div>
@@ -68,11 +71,7 @@
 	<div id="prog_filters" class="filters">
 		<div id="prog_lists"></div>
 		<form name="search" id="search">
-			<input type="text" id="q" required data-txt="Search" data-txt-attr="placeholder">
-			<div id="q_ctrl">
-			<input type="submit" id="q_submit" data-txt="Go" data-txt-attr="value">
-			</div>
-			<div id="q_hint" class="hint"></div>
+			<input type="text" id="q" placeholder="Search">
 			<div id="filter_sum_wrap">
 				<input type="reset" id="q_clear" data-txt="Clear all" data-txt-attr="value">
 				<div id="filter_sum"></div>
@@ -111,7 +110,7 @@ if (navigator.standalone) document.getElementById('install-instructions').style.
 <style>
 #map { width: 100% !important; }
 #map td { text-align: center !important; padding: 6px 32px; }
-#map a, #map span { font-family: 'Oswald'; font-weight: 400; font-size: 1.2em; cursor: pointer; }
+#map a, #map span { font-family: 'Alegreya Sans'; font-weight: 400; font-size: 1.2em; cursor: pointer; }
 #map a:hover, #map span:hover { text-decoration: underline; }
 #map tr:hover, .quick-ref tr:hover { background: inherit !important; }
 .quick-ref dt { margin: 6px 0 3px; }

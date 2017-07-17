@@ -5,6 +5,20 @@
 	.prog & { display: block; }
 }
 
+#prog_disclaimer {
+	margin: 24px 10px -20px 72px;
+	position: relative;
+	text-align: left;
+}
+
+#prog_disclaimer_note {
+	font-weight: bold;
+	margin-left: -72px;
+	position: absolute;
+	text-align: center;
+	width: 65px;
+}
+
 #prog_filters {
 	margin-left: (-1 * @side-margin);
 	ul {
@@ -31,8 +45,8 @@
 	clear: left;
 	max-width: (@full-width - 24px);
 	margin: @side-margin 0 0 @side-margin;
-	border: @border-normal;
-	border-radius: @border-radius;
+	border-radius: 2px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
 	padding: 10px;
 	background: @bg-highlight-more;
 	text-align: center;

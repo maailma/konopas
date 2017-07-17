@@ -63,11 +63,10 @@
 }
 .next #tab_next, .star #tab_star, .prog #tab_prog,.part #tab_part, .info #tab_info {
 	.font-heavy;
-	border: @border-normal;
 }
 
 .sub-side {
-	ul { margin: -3px 0 3px 0; font-size: 0.8em; font-weight: 400; }
+	ul { margin: -3px 8px 3px 0; font-size: 0.8em; font-weight: 400; }
 	li { border: none !important; padding: 3px 6px !important; }
 	li:after { content: " «"; }
 }
@@ -111,15 +110,23 @@
 	.wide-only { display: none; }
 	#time, #scroll { left: @page-margin; }
 	#refresh.enabled { bottom: 20px; right: 20px; }
-	#banner { text-align: center; margin: 10px 0; }
+	#banner {
+		background: white;
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
+		margin: -8px -8px 0;
+		padding: 10px;
+		text-align: center;
+	}
 	#title { display: none !important; }
+	#tab-wrap { display: table; width: 100%; }
 	#tabs {
+		display: table-row !important;
+		font-size: 18px;
 		padding-top: 5px !important;
-		li { display: inline-block; border-bottom: @border-normal; }
+		li { display: table-cell; width: 25%; }
 	}
 	.next #tab_next, .star #tab_star, .prog #tab_prog,.part #tab_part, .info #tab_info {
 		margin: 0 -2px;
-		border-bottom-color: @bg-plain;
 		border-top-left-radius: @border-radius;
 		border-top-right-radius: @border-radius;
 	}
@@ -129,12 +136,24 @@
 @media (min-width: 700px) {
 	#time, #scroll { left: (@page-margin + @side-width + @side-margin); }
 	#refresh.enabled { bottom: 20px; left: 20px; }
-	#banner { width: @side-width; float: left; position: fixed; }
+	#banner {
+		background: white;
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
+		margin-top: -8px;
+		margin-left: -8px;
+		padding-top: 8px;
+		padding-left: 8px;
+		min-height: 100%;
+		width: @side-width;
+		float: left;
+		position: fixed;
+	}
 	#title-small { display: none; }
 	#title { display: block !important; }
 	#tabs {
 		font-size: 1.2em;
-		li { display: block; text-align: right; border-right: @border-normal; }
+		padding-right: 8px;
+		li { display: block; text-align: right; }
 	}
 	.next #tab_next, .star #tab_star, .prog #tab_prog, .part #tab_part, .info #tab_info {
 		margin: -2px 0;
