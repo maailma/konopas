@@ -26,6 +26,15 @@ KonOpas.Prog = function(list, opt) {
 			if (isNaN(p.t0)) delete p.t0;
 			else p.t1 = new Date(p.t0.valueOf() + 60000 * m);
 		}
+		if (p.themes && p.themes.length) {
+			if (p.tags) p.themes.forEach(function(t){ p.tags.unshift('track:'+t) });
+			else p.tags = p.themes.map(function(t){ return 'track:' + t });
+		}
+		if (p.format) {
+			if (p.tags) p.tags.push('type:' + p.format);
+			else p.tags = ['type:' + p.format];
+		}
+		if (p.desc) p.desc = p.desc.trim().replace(/\s*<br \/>$/, '')
 	});
 	var pf = _el('prog_filters');
 	pf.onclick = KonOpas.Prog.filter_change;

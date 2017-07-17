@@ -162,16 +162,19 @@ if (navigator.standalone) document.getElementById('install-instructions').style.
 <script src="konopas.min.js"></script>
 <script>
 var konopas = new KonOpas({
-	'id': 'worldcon75',
-	'default_duration': 0,
-	'time_show_am_pm': false,
-	'show_all_days_by_default': true,
-	'use_server': true
+	id: 'worldcon75',
+	default_duration: 0,
+	time_show_am_pm: false,
+	show_all_days_by_default: true,
+	use_server: true
 });
 konopas.set_program(program, {
-	'day': {},
-	'area': {},
-	'tag': {}
+	day: {},
+	area: {},
+	tag: {
+		min_count: 5,
+		categories: ['track', 'type']
+	}
 });
 konopas.set_people(people);
 konopas.set_view();
