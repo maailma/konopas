@@ -7,34 +7,23 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 
-<!-- Android + favicon -->
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="shortcut icon" sizes="196x196" href="skin/favicon.196.png">
-
-<!-- iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
-<!--
-<link rel="apple-touch-icon"                 href="data/icon.apple.60.png">
-<link rel="apple-touch-icon" sizes="76x76"   href="data/icon.apple.76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="data/icon.apple.120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="data/icon.apple.152.png">
-<link rel="apple-touch-startup-image" href="data/start.apple.1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
-<link rel="apple-touch-startup-image" href="data/start.apple.2048x1496.png" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
-<link rel="apple-touch-startup-image" href="data/start.apple.768x1004.png"  media="(device-width: 768px) and (orientation: portrait)">
-<link rel="apple-touch-startup-image" href="data/start.apple.1024x748.png"  media="(device-width: 768px) and (orientation: landscape)">
-<link rel="apple-touch-startup-image" href="data/start.apple.640x920.png"   media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
-<link rel="apple-touch-startup-image" href="data/start.apple.320x460.png"   media="(device-width: 320px)">
--->
+<link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icons/android-icon-192x192.png">
 
-<!-- Windows Phone 8.1 -->
-<!--
-<meta name="msapplication-TileColor"         content="#ffffff">
-<meta name="msapplication-square70x70logo"   content="data/icon.ie.png">
-<meta name="msapplication-square150x150logo" content="data/icon.ie.png">
-<meta name="msapplication-square310x310logo" content="data/icon.ie.png">
--->
-
-<title>KonOpas Sample Guide</title>
+<title>Worldcon 75 Programme Guide</title>
 
 <body><div id="top"></div>
 <div id="load_disable"></div>
@@ -46,8 +35,8 @@
 <div id="server_connect"></div>
 
 <h1><a href="#info" alt="CONVENTION" title="CONVENTION">
-<img id="title-small" src="skin/konopas.png" style="width: 240px;">
-<img id="title" src="skin/konopas.png" style="width: 200px;"></a></h1>
+<img id="title-small" src="skin/worldcon75.svg" style="width: 240px;">
+<img id="title" src="skin/worldcon75.svg" style="width: 200px; margin-left: -4px;"></a></h1>
 
 <div id="tab-wrap">
 <ul id="tabs">
@@ -77,6 +66,11 @@
 				<div id="filter_sum"></div>
 			</div>
 		</form>
+		<div id="prog_disclaimer">
+			<div id="prog_disclaimer_note">Please note:</div>
+			<p>This is a preliminary Worldcon 75 programme schedule. There will be changes in programme times, rooms and participants – both additions and cancellations. There will especially be additions to Signings, Strolls with Stars and GoH programme as well as details about the Games that will be available.</p>
+			<p>The programme will be continuously updated until the very last moments of the convention, so please do check for changes before making any definitive plans! If you think there is something/someone missing from the programme, please do not panic: it is likely we are still waiting for confirmation for something and are unable to publish an item before we get it.</p>
+		</div>
 	</div>
 	<div id="day-narrow" class="sub-narrow"></div>
 </div>
@@ -88,7 +82,7 @@
 </div>
 
 <div id="info_view" class="view">
-<p>This is the programme guide for <a href="http://example.org/">CONVENTION</a>. It should be suitable for use on most browsers and devices. It's an instance of <a href="http://konopas.org/">KonOpas</a>, an open-source project providing conventions with easy-to-use mobile-friendly guides.
+<p>This is the programme guide for <a href="http://worldcon.fi/">Worldcon 75</a>. It should be suitable for use on most browsers and devices. It's an instance of <a href="http://konopas.org/">KonOpas</a>, an open-source project providing conventions with easy-to-use mobile-friendly guides.
 
 <p><div id="last-updated">Programme and participant data were last updated <span></span>.</div>
 
@@ -163,16 +157,16 @@ if (navigator.standalone) document.getElementById('install-instructions').style.
 
 </div><!-- /main -->
 
-<script src="http://konopas.org/demo/data/program.js"></script>
-<script src="http://konopas.org/demo/data/people.js"></script>
-<script src="konopas.js"></script>
+<script src="https://worldcon75.grenadine.co/w75/konopas/program.js"></script>
+<script src="https://worldcon75.grenadine.co/w75/konopas/program/participants.js"></script>
+<script src="konopas.min.js"></script>
 <script>
 var konopas = new KonOpas({
-	'id': '',
+	'id': 'worldcon75',
 	'default_duration': 0,
-	'time_show_am_pm': true,
+	'time_show_am_pm': false,
 	'show_all_days_by_default': true,
-	'use_server': false
+	'use_server': true
 });
 konopas.set_program(program, {
 	'day': {},
