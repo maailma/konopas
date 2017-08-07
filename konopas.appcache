@@ -2,16 +2,19 @@ CACHE MANIFEST
 # [insert mod-timestamp here]
 
 CACHE:
-data/program.js
-data/people.js
 konopas.min.js
-skin/skin.css
+skin/konopas.css
+skin/worldcon75.svg
 skin/icons.png
-skin/Roboto300.ttf
-skin/Roboto500.ttf
-skin/Oswald400.ttf
-favicon.ico
-data/title.png
+skin/AlegreyaSans-400.ttf
+skin/AlegreyaSans-500.ttf
+skin/AlegreyaSans-700.ttf
+https://worldcon75.grenadine.co/w75/konopas/program.js
+https://worldcon75.grenadine.co/w75/konopas/program/participants.js
+http://www.worldcon.fi/wp-content/uploads/2017/08/webmap_floor1.png
+http://www.worldcon.fi/wp-content/uploads/2017/08/webmap_floor2.png
+http://www.worldcon.fi/wp-content/uploads/2017/08/webmap_south.png
+http://www.worldcon.fi/wp-content/uploads/2017/08/webmap_north.png
 
 NETWORK:
 *
